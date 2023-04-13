@@ -492,6 +492,12 @@ body {
   display: grid;
 }
 
+@media only screen and (max-width: 740px) {
+  .hero {
+    grid-template-rows: 1fr 4.8vh 1fr;
+  }
+}
+
 .hero__header {
   align-self: self-end;
 }

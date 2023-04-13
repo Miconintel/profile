@@ -20,6 +20,11 @@
   // grid-template-rows: 1fr repeat(2, minmax(max-content, 0.5fr));
   grid-row-gap: 4.8rem;
   justify-items: center;
+  @media only screen and (max-width: 740px) {
+    // i am reducing the moiddle row to create a good spacce
+
+    grid-template-rows: 1fr 4.8vh 1fr;
+  }
 
   &__header {
     align-self: self-end;
