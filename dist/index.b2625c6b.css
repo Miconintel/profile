@@ -526,7 +526,7 @@ body {
 @media only screen and (max-width: 740px) {
   .hero__button {
     grid-row: auto;
-    align-items: self-start;
+    align-self: self-start;
     margin-top: 0;
   }
 }

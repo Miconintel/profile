@@ -400,7 +400,7 @@ body {
       .hero__button {
         margin-top: 0;
         grid-row: auto;
-        align-items: self-start; } }
+        align-self: self-start; } }
 
 .skill {
   grid-column: fullstart/end;
