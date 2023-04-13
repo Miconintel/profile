@@ -1,0 +1,182 @@
+.hero {
+  color: $grey-text;
+  background-color: $dark-mode;
+  grid-column: fullstart/end;
+  grid-row: h-h-start/h-h-end;
+
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color: $secondary-color, $alpha: 0.9),
+      rgba($color: $secondary-color-light, $alpha: 0.9)
+    ),
+    url("../src/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr repeat(2, minmax(max-content, 0.5fr));
+  grid-row-gap: 4.8rem;
+  justify-items: center;
+  align-items: center;
+
+  &__header {
+    align-self: self-end;
+  }
+
+  &__text {
+    max-width: 50%;
+    font-size: 1.6rem;
+    text-align: center;
+    align-self: self-start;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    padding-right: 1px;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: typing 5s steps(50, end), blink 0.75s step-end infinite;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    width: max-content;
+    padding: 1.2rem 2.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    align-self: self-start;
+    font-family: inherit;
+    // grid-row: 2/3;
+    grid-column: 1/3;
+
+    @media only screen and (max-width: 740px) {
+      margin-top: 8rem;
+    }
+  }
+}
+
+.skill {
+  grid-column: fullstart/end;
+  background-color: $secondary-color;
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $dark-mode,
+    $secondary-color-light
+  );
+  padding: 9.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-auto-rows: 12rem;
+  grid-column-gap: 4.8rem;
+
+  &__heading {
+    color: $grey-text;
+    text-transform: uppercase;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}
+
+.soft {
+  grid-column: fullstart/end;
+  padding: 9.6rem;
+  background-image: linear-gradient(
+      to right,
+      rgba($color: $dark-mode, $alpha: 0.95),
+      rgba($color: $secondary-color, $alpha: 1)
+    ),
+    url("../src/bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project {
+  grid-column: fullstart/end;
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $dark-mode,
+    $secondary-color-light
+  );
+  padding: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-column-gap: 4.8rem;
+
+  @media only screen and (max-width: 900px) {
+    grid-row-gap: 6rem;
+  }
+
+  &__heading {
+    color: $grey-text;
+    text-transform: uppercase;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}
+
+.profile {
+  color: $grey-text;
+  grid-column: fullstart/end;
+  // background-color: $secondary-color;
+  background-image: linear-gradient(
+      to right,
+      rgba($color: $dark-mode, $alpha: 0.85),
+      rgba($color: $secondary-color, $alpha: 1)
+    ),
+    url("../src/profile-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 9.6rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__image-cont {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  &__image {
+    height: 14rem;
+    float: left;
+    shape-outside: circle();
+    margin-right: 1.4rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+.whatsapp {
+  &__link {
+    position: fixed;
+    top: 80%;
+    right: 4rem;
+    display: inline-block;
+    width: 4.8rem;
+    height: 4.8rem;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      fill: $grey-text;
+      transition: all 0.5s;
+
+      &:hover {
+        fill: $primary-color;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@keyframes typing {
+  0% {
+    width: 0;
+    color: $primary-color;
+    white-space: nowrap;
+  }
+
+  100% {
+    width: 45%;
+    color: $grey-text;
+    white-space: normal;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+
+  100% {
+    border-color: orange;
+  }
+}
+
+@keyframes nav {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: 2%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}

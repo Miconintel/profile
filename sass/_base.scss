@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* it is not inherited so it is forced
+  all elemnts under the root inherit it from any parent above it, which is body */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $main-font;
+  // line-height: 1.4;
+}

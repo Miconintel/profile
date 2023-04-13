@@ -1,0 +1,17 @@
+.primary-header {
+  font-size: 4.8rem;
+
+  &__span {
+    margin-top: 1.6rem;
+    display: block;
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+}
+.heading {
+  &__secondary {
+    font-size: 3.6rem;
+  }
+}
